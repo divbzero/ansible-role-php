@@ -1,0 +1,7 @@
+- name: install
+  apt: name={{ php_package }}
+  become: yes
+- name: modules
+  apt: name={{ item }}
+  loop: "{{ php_modules }}" 
+  become: yes

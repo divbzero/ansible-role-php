@@ -1,0 +1,2 @@
+php_package: php-fpm
+php_modules: [php-mysql]
